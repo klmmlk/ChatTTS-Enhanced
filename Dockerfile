@@ -1,7 +1,7 @@
 FROM python:3.10-alpine
 LABEL authors="LINLINLIN"
 
-RUN apk update && apk --no-cache install git \
+RUN apk update && apk install git \
     && git clone https://github.com/klmmlk/ChatTTS-Enhanced.git \
     && cd ChatTTS-Enhanced \
     && pip install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 cpuonly -c pytorch \
