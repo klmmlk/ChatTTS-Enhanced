@@ -6,7 +6,7 @@ RUN apk update && apk add git \
 
 WORKDIR /ChatTTS-Enhanced
 
-RUN pip install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 cpuonly -c pytorch \
+RUN pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 \
     && pip install resemble-enhance \
     && pip install -r requirements.txt \
     && pip install WeTextProcessing
